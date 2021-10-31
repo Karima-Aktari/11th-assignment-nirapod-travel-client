@@ -6,7 +6,7 @@ const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/orders')
+        fetch('https://dark-alien-70597.herokuapp.com/orders')
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [])
@@ -14,7 +14,7 @@ const ManageOrders = () => {
     // Delete Order
     const handleDelete = id => {
         console.log(id);
-        const url = `http://localhost:5000/deleteOrder/${id}`
+        const url = `https://dark-alien-70597.herokuapp.com/deleteOrder/${id}`
         fetch(url, {
             method: "DELETE",
             headers: { "content-type": "application.json" }

@@ -7,7 +7,7 @@ const Messages = () => {
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/message')
+        fetch('https://dark-alien-70597.herokuapp.com/message')
             .then(res => res.json())
             .then(data => setMessages(data))
     }, []);

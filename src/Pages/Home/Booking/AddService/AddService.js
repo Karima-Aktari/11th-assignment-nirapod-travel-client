@@ -8,7 +8,7 @@ const AddService = () => {
 
     const onSubmit = data => {
         console.log(data);
-        axios.post('http://localhost:5000/packages', data)
+        axios.post('https://dark-alien-70597.herokuapp.com/packages', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');

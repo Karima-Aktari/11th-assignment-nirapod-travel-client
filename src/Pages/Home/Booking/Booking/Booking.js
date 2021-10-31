@@ -16,7 +16,7 @@ const Booking = () => {
     const onSubmit = data => {
         data.order = booking;
         console.log(data);
-        axios.post('http://localhost:5000/orders', data)
+        axios.post('https://dark-alien-70597.herokuapp.com/orders', data)
             .then(res => {
                 if (res.data.insertedId) {
                     alert('Added Successfully');
@@ -26,7 +26,7 @@ const Booking = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/packages/${bookingId}`)
+        fetch(`https://dark-alien-70597.herokuapp.com/packages/${bookingId}`)
             .then(res => res.json())
             .then(data => setBooking(data))
     }, [])

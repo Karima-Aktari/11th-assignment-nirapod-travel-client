@@ -8,23 +8,22 @@ const MyOrders = () => {
     const [orders, setOrders] = useState([]);
 
     const email = user?.email;
-    console.log(email)
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrders/${email}`)
+        fetch(`https://dark-alien-70597.herokuapp.com/myOrders/${email}`)
             .then(res => res.json())
             .then(data => setOrders(data));
     }, [email]);
 
     //Delete order
     const handleDelete = id => {
-        const url = `http://localhost:5000/deleteOrder/${id}`
+        const url = `https://dark-alien-70597.herokuapp.com/deleteOrder/${id}`
         fetch(url, {
             method: "DELETE",
             headers: { "content-type": "application.json" }
         })
             .then(res => res.json())
             .then(data => {
-                if (data.deletedCount) {
+                if (data.deletedCount > 0) {
                     alert('Are you sure to delete?')
                     const remaining = orders.filter(service => service._id !== id);
                     setOrders(remaining);
@@ -39,7 +38,7 @@ const MyOrders = () => {
             <h1>My Orders List:- {orders.length}</h1>
             <div className="row text-center mx-auto">
                 {orders?.map((order) => (
-                    <div className="col-md-6 col-lg-4 p-3">
+                    <div className="col-md-6 col-lg-4 p-3" key={order._id}>
                         <div className="border rounded-3 p-2 bg-info">
                             <img src={order?.order.img} className="w-75 rounded-3" alt="" />
                             <h5>{order?.name}</h5>
