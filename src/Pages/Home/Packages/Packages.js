@@ -1,15 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import Package from '../Package/Package';
+import { Spinner } from 'react-bootstrap';
+import useAuth from '../../../Hooks/useAuth';
 
 const Packages = () => {
     const [packages, setPackages] = useState([]);
-    // console.log(packages);
+    const { isLoading } = useAuth();
 
     useEffect(() => {
         fetch('https://dark-alien-70597.herokuapp.com/packages')
             .then(res => res.json())
             .then(data => setPackages(data));
     }, [])
+
+    if (isLoading) {
+        return <Spinner animation="border" variant="warning" />
+    };
 
     return (
         <div className="p-3">

@@ -11,7 +11,7 @@ const Header = () => {
                 <nav>
                     <NavLink to="/home">Home</NavLink>
                     <NavLink to="/about">About</NavLink>
-                    <NavLink to="/bookings">Bookings</NavLink>
+                    <NavLink to="/contact">Contact</NavLink>
                     {
                         user.email ?
                             <div>

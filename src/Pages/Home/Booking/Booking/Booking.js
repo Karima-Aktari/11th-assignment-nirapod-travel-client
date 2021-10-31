@@ -15,6 +15,8 @@ const Booking = () => {
 
     const onSubmit = data => {
         data.order = booking;
+        data.status = "pending";
+        data.date = new Date();
         console.log(data);
         axios.post('https://dark-alien-70597.herokuapp.com/orders', data)
             .then(res => {
@@ -34,9 +36,9 @@ const Booking = () => {
 
     return (
         <div className="p-4 bg-dark text-white">
-            <div className="d-flex justify-content-around">
+            <div className="d-flex justify-content-around booking">
                 <div className="p-4">
-                    <img src={booking.img} className="img-fluid w-50 rounded-3" alt=""></img>
+                    <img src={booking.img} className="img-fluid w-75 rounded-3" alt=""></img>
                     <h2>{booking.name}</h2>
                     <h5>$ {booking.price}</h5>
                     <h5>{booking.duration}</h5>

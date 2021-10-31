@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import ManageOrderList from '../ManageOrderList/ManageOrderList';
+import { Link } from 'react-router-dom';
+import useAuth from '../../../../Hooks/useAuth';
+import { Spinner } from 'react-bootstrap';
 
 const ManageOrders = () => {
     const [orders, setOrders] = useState([]);
+    const { isLoading } = useAuth();
 
     useEffect(() => {
         fetch('https://dark-alien-70597.herokuapp.com/orders')
@@ -13,7 +17,6 @@ const ManageOrders = () => {
 
     // Delete Order
     const handleDelete = id => {
-        console.log(id);
         const url = `https://dark-alien-70597.herokuapp.com/deleteOrder/${id}`
         fetch(url, {
             method: "DELETE",
@@ -28,10 +31,16 @@ const ManageOrders = () => {
                 }
             })
     }
+    // Spinner setting
+    if (isLoading) {
+        return <Spinner animation="border" variant="warning" />
+    };
+
+
 
     return (
-        <div>
-            <h1 className="pt-4">All Orders Are Here</h1>
+        <div className="p-3 bg-secondary">
+            <h1 className="pt-2">All Orders Are Here</h1>
             <div className="row mx-auto">
                 {
                     orders?.map(order =>
@@ -43,7 +52,7 @@ const ManageOrders = () => {
                     )
                 }
             </div>
-
+            <Link to="/"><button className="btn btn-success px-4">Go Back</button></Link>
         </div>
     );
 };

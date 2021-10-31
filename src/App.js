@@ -14,6 +14,8 @@ import AddService from './Pages/Home/Booking/AddService/AddService';
 import NotFound from './NotFound/NotFound';
 import MyOrders from './Pages/Home/Booking/MyOrders/MyOrders';
 import ManageOrders from './Pages/Home/Booking/ManageOrders/ManageOrders';
+import About from './Pages/About/About';
+import Contact from './Pages/Contact/Contact';
 
 function App() {
   return (
@@ -42,6 +44,12 @@ function App() {
             </Route>
             <Route path="/manageOrders">
               <ManageOrders></ManageOrders>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/contact">
+              <Contact></Contact>
             </Route>
             <Route path="*">
               <NotFound></NotFound>

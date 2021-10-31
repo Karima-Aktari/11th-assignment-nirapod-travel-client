@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import useAuth from '../../../../Hooks/useAuth';
+import { Spinner } from 'react-bootstrap';
 
 const MyOrders = () => {
-    const { user } = useAuth();
+    const { user, isLoading } = useAuth();
     const [orders, setOrders] = useState([]);
 
     const email = user?.email;
@@ -31,6 +32,11 @@ const MyOrders = () => {
             })
     }
 
+    if (isLoading) {
+        return <Spinner animation="border" variant="warning" />
+    };
+
+
 
 
     return (
@@ -49,14 +55,15 @@ const MyOrders = () => {
                             <h5>Package:{order?.order.name}</h5>
                             <h5>${order?.order.price}</h5>
                             <h5>{order?.order.duration}</h5>
-                            <h6>{order?.order.description}</h6>
+                            <h6>Date:-{order?.date}</h6>
+                            <button className="btn btn-warning">{order.status}</button> <br /><br />
                             <button onClick={() => handleDelete(order._id)} className="btn btn-danger px-4">Delete</button>
                         </div>
                     </div>
                 ))}
             </div>
             <Link to="/"><button className="btn btn-success px-4">Go Back</button></Link>
-        </div>
+        </div >
     );
 };
 
