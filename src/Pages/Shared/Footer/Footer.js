@@ -30,7 +30,7 @@ const Footer = () => {
                     <h3>Support</h3>
                     <p>Contact us</p>
                     <p>About Us</p>
-                    <p>Service Us</p>
+                    <p>Services/Packages</p>
                 </div>
             </div>
         </div>
