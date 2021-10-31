@@ -1,0 +1,16 @@
+.bookingForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
+.bookingForm form input{
+    width:50%;
+    margin: 10px 0px;
+    background-color: rgb(77, 211, 248);
+    text-align: center;
+    border-color: rgb(24, 21, 21);
+    border-radius: 20px;
+    padding: 5px 0px;
+}

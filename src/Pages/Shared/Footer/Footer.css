@@ -1,0 +1,12 @@
+.footer-background{
+    background-color: rgb(39, 12, 12);
+    color:rgb(95, 159, 175)
+}
+
+@media only screen and (max-width:688px) {
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

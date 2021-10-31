@@ -1,0 +1,50 @@
+.header, .header-name{
+    text-align: center; 
+}
+.header nav {
+    line-height: 45px;
+    background-color: rgb(5, 0, 0);
+    color: white;
+}
+.header nav a{
+    text-decoration: none;
+    color: rgb(142, 226, 208);
+    margin-right: 20px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight:600;
+}
+.header nav a:hover{
+    background-color: rgb(30, 100, 105);
+}
+.banner{
+    background-image: url('https://image.freepik.com/free-vector/travel-tourism-illustration-with-resort-sightseeing-elements_1284-30189.jpg');
+    height:75vh;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.header-name{
+    color: brown;
+    font-weight: 1000;
+    font-style: italic;
+}
+.userName{
+    color: rgb(68, 4, 65);
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 688px){
+    .heading{
+       margin: 0%;
+    }
+    .header nav{
+        display: flex;
+        flex-direction: column;
+    }
+   
+}
