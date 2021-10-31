@@ -33,6 +33,7 @@ const Footer = () => {
                     <p>Services/Packages</p>
                 </div>
             </div>
+            <p className="text-center pt-3"> ©Stay connected, Stay Happy©</p>
         </div>
     );
 };
