@@ -119,3 +119,111 @@
         "text": "See the world. It is more fantastic than any dream made or paid for in factories. Ask for no guarantees, ask for no security."
     }
 ]
+// carHouse
+[
+    {
+        "img": "https://www.drivespark.com/images/2020-05/bmw-8-series-gran-coupe-exterior-11.jpg",
+        "name": "BMW",
+        "price": 55000,
+        "description": "Runner up on the list is the German luxury car manufacturer, BMW, which is an improvement from the previous year."
+    },
+    {
+        "img": "https://3.bp.blogspot.com/-ox-F0UuFlSo/U-mOxH0x1lI/AAAAAAAAQEM/LfAlXpxHSyw/s1600/McLaren+SLR+999+Red+Gold+Dream-1.jpg",
+        "name": "Mercedes-Bez",
+        "price": 60650,
+        "description": "The German brand  has some more affordable options, including the A-Class, GLA, and GLB SUVs with an innovative electric vehicle on the way."
+    },
+    {
+        "img": "https://images.financialexpress.com/2018/05/BMW-X-7-main.jpeg?w=660&h=440&imflag=true",
+        "name": "Mazda",
+        "price": 60550,
+        "description": "Japanese car brand, Mazda, takes out the top spot as the best car brand of 2021."
+    },
+    {
+        "img": "https://www.carlogos.org/review-images/fastest-mercedes-benz-cars.jpg",
+        "name": "Subaru",
+        "price": 60550,
+        "description": "Not only did Subaru come third in overall brand rating, but it also had two individual cars named in the top ten."
+    },
+    {
+        "img": "https://i.pinimg.com/736x/9a/cd/aa/9acdaa2791393f86f1330988c857bb09.jpg",
+        "name": "Porsche",
+        "price": 50550,
+        "description": "Luxury brand Porsche is synonymous with both high-end sporty vehicles and race cars.While there is still a focus on the sporty models,newer additions to the range."
+    },
+    {
+        "img": "https://www.drivespark.com/images/2020-08/honda-jazz-exterior-2.jpg",
+        "name": "Honda",
+        "price": 40450,
+        "description": "Moving up ten spots from last year, Honda showed the most improvement in the 2021 list.It always had a competitive fuel economy and energetic powertrains."
+    },
+    {
+        "img": "https://i.pinimg.com/originals/c2/44/c9/c244c98a4c783450d7614b03f05cb956.jpg",
+        "name": "Lexus",
+        "price": 60550,
+        "description": "The Lexus RX combines comfort, performance, safety, and reliability to win the Best Midsize SUV. Beyond that, the brand is all about luxury. It embraces Omotenashi."
+    },
+    {
+        "img": "https://images.financialexpress.com/2021/01/2021-Toyota-fortuner-legender-facelift-660.jpg",
+        "name": "Toyota",
+        "price": 40550,
+        "description": "Three Toyota vehicles ranked in the Top 10, while the company itself is number seven in the overall brands’ rating. The Corolla is the Best Small Car, the Prius is the Best Hybrid."
+    },
+    {
+        "img": "https://www.drivespark.com/images/2021-03/hyundai-bayon-6.jpg",
+        "name": "Hyundai",
+        "price": 41550,
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://www.volkswagenag.com/presence/markenundmodelle/modelle-2021/Audi.jpg.x_632.y_1000.trans",
+        "name": "Audi",
+        "price": 51550,
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZQunC3s_Rpv82x96UQxTzvptrc2wwpgQd2P3mdLf4lY42kbyJhoEo1OXnpn7QTLo59Ao&usqp=CAU",
+        "name": "Dodge",
+        "price": 45550,
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://i.ndtvimg.com/i/2016-07/tesla_650x400_71467341362.jpg",
+        "name": "Tesla",
+        "price": 41550,
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://s.yimg.com/ny/api/res/1.2/QmK14ipyWRoEOjZC8hxRZA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://s.yimg.com/uu/api/res/1.2/xSnyBAOW6lN4FmuPVR0H9w--~B/aD00NTA7dz04MDA7YXBwaWQ9eXRhY2h5b24-/https://media.zenfs.com/en/autoblog_50/a3b5a4dba5d70d7687d0b2a92bb44c12",
+        "name": "Volvo",
+        "price": 41550,
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    }
+]
+//Our Offers
+[
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoq9Cbzoskn1HkwJfPqBqFmo4h3Y0mtTx8bVQ2u7rJV6Gj-WnRgrTBprlQIhV69mGFNIU&usqp=CAU",
+        "name": "The Wheel",
+        "service": "Balancing",
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkj9PbcPqv79DbeoaRQf_EeU9jRtrE_L3jfNd_Fs4n-m6lVng-zIUzq_F1nwsD8WSseb0&usqp=CAU",
+        "name": "Transmission",
+        "service": "Installation",
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMZic3ZHKbteKK-6Dtigq3we9VGHAP5SOoj5youBldAzOcYGsalXszdTx8lc6tCdTByjU&usqp=CAU",
+        "name": "CarZone",
+        "service": "Painting",
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    },
+    {
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHFyQN_UZWxqReubwEfjfB3KR8MOMAKLbj5Zj-mvZYIjojF9YoCBin-KMK9Vs5O5ZlJm4&usqp=CAU",
+        "name": "CarZone",
+        "service": "Inspection",
+        "description": "Technology, excellent comfort levels, fuel efficiency, and powertrain refinement are the cornerstones of the brand’s reputation. The cars are fun to drive."
+    }
+]

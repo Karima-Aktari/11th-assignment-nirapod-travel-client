@@ -13,6 +13,7 @@ const Packages = () => {
             .then(data => setPackages(data));
     }, [])
 
+    //Spinner
     if (isLoading) {
         return <Spinner animation="border" variant="warning" />
     };
